@@ -55,6 +55,16 @@ begin
       ConvertBigDX7IItoMDX(msBank, AOutput, sName, AVerbose, ASettings);
     end;
   end;
+  if (VMEM in ms) and not (LMPMEM in ms) and not (AMEM in ms) then
+  begin
+    if (msBank.Size = 4104) then
+    begin
+      WriteLn('It is a DX7 MK1 VMEM file');
+      WriteLn('This conversion will reset PEG and AMS parameters to default values');
+      if AVerbose then WriteLn('Using Reset_PEG_AMS with one stream');
+      Reset_PEG_AMS(msBank, AOutput, sName);
+    end;
+  end;
   msBank.Free;
 end;
 

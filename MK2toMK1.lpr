@@ -171,7 +171,7 @@ type
   begin
     writeln('');
     writeln('');
-    writeln('Yamaha DX7II to DX7 Converter 1.0');
+    writeln('Yamaha DX7II to DX7 Converter 1.1');
     writeln('Author: Boban Spasic');
     writeln('https://github.com/BobanSpasic/MK2toMK1');
     writeln('');

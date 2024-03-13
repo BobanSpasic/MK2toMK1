@@ -21,6 +21,7 @@ uses
   untDXUtils, untParConst, untUtils, IniFiles;
 
 procedure ConvertBigDX7IItoMDX(var ms: TMemoryStream; APath: string; AName: string; AVerbose: boolean; ASettings: string);        // 2xVMEM, 2xAMEM, 1xPMEM
+procedure Reset_PEG_AMS(var ms: TMemoryStream; APath: string; AName: string);                                                     // reset bad conversion
 function GetSettingsFromFile(ASettings: string; var aAMS_table: TAMS; var aPEGR_table: TPEGR): boolean;
 
 implementation
@@ -80,7 +81,7 @@ begin
   DX7outB := TDX7BankContainer.Create;
   Report := TStringList.Create;
   ConversionLog := TStringList.Create;
-  ConversionLog.Add('Yamaha DX7II to DX7 Converter 1.0');
+  ConversionLog.Add('Yamaha DX7II to DX7 Converter 1.1');
   ConversionLog.Add('Author: Boban Spasic');
   ConversionLog.Add('https://github.com/BobanSpasic/MK2toMK1');
   ConversionLog.Add('');
@@ -320,6 +321,71 @@ begin
   DX7II.Free;
   DX7outA.Free;
   DX7outB.Free;
+  Report.Free;
+  ConversionLog.Free;
+end;
+
+procedure Reset_PEG_AMS(var ms: TMemoryStream; APath: string; AName: string);
+var
+  msA: TMemoryStream;
+  DXA: TDX7BankContainer;
+  DX7_VCED: TDX7VoiceContainer;
+  DX7out: TDX7BankContainer;
+
+  Report: TStringList;
+  ConversionLog: TStringList;
+
+  msSearchPosition: integer;
+  msFoundPosition: integer;
+
+  i: integer;
+begin
+  msFoundPosition := 0;
+
+  msA := TMemoryStream.Create;
+  msA.LoadFromStream(ms);
+
+  DXA := TDX7BankContainer.Create;
+
+  DX7out := TDX7BankContainer.Create;
+  Report := TStringList.Create;
+  ConversionLog := TStringList.Create;
+  ConversionLog.Add('Yamaha DX7II to DX7 Converter 1.1');
+  ConversionLog.Add('Author: Boban Spasic');
+  ConversionLog.Add('https://github.com/BobanSpasic/MK2toMK1');
+  ConversionLog.Add('');
+  ConversionLog.Add('Reseting PEG and AMS to defaults');
+  ConversionLog.Add('=================================');
+
+  msSearchPosition := 0;
+  if FindDX_SixOP_MEM(VMEM, msA, msSearchPosition, msFoundPosition) then
+  begin
+    DXA.LoadBankFromStream(msA, msFoundPosition);
+    ConversionLog.Add('VMEM loaded from position ' +
+      IntToStr(msFoundPosition));
+    for i := 1 to 32 do
+      ConversionLog.Add(Format('%.2d', [i]) + ': ' + DXA.GetVoiceName(i));
+    ConversionLog.Add('=================================');
+  end;
+  for i := 0 to ConversionLog.Count - 1 do
+    WriteLn(ConversionLog[i]);
+  WriteLn('=================================');
+
+  for i := 1 to 32 do
+  begin
+    DX7_VCED := TDX7VoiceContainer.Create;
+
+    DXA.GetVoice(i, DX7_VCED);
+    DX7_VCED.Reset_PEG_AMS;
+    DX7out.SetVoice(i, DX7_VCED);
+
+    DX7_VCED.Free;
+  end;
+  DX7out.SaveBankToSysExFile(IncludeTrailingPathDelimiter(APath) + AName + '_reset.syx');
+
+  msA.Free;
+  DXA.Free;
+  DX7out.Free;
   Report.Free;
   ConversionLog.Free;
 end;

@@ -74,8 +74,8 @@
       <Unit>
         <Filename Value="MK2toMK1.lpr"/>
         <IsPartOfProject Value="True"/>
-        <TopLine Value="158"/>
-        <CursorPos X="5" Y="174"/>
+        <TopLine Value="174"/>
+        <CursorPos X="80" Y="182"/>
         <UsageCount Value="202"/>
         <Loaded Value="True"/>
       </Unit>
@@ -84,7 +84,8 @@
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="53" Y="28"/>
+        <TopLine Value="48"/>
+        <CursorPos X="86" Y="63"/>
         <UsageCount Value="202"/>
         <Loaded Value="True"/>
       </Unit>
@@ -189,13 +190,13 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="11"/>
         <CursorPos X="50" Y="32"/>
-        <UsageCount Value="0"/>
+        <UsageCount Value="10"/>
       </Unit>
       <Unit>
         <Filename Value="units\untDX7Voice.pas"/>
         <EditorIndex Value="11"/>
-        <TopLine Value="1023"/>
-        <CursorPos X="19" Y="1030"/>
+        <TopLine Value="1074"/>
+        <CursorPos X="42" Y="1101"/>
         <UsageCount Value="100"/>
         <Loaded Value="True"/>
       </Unit>
@@ -323,92 +324,13 @@
       <Unit>
         <Filename Value="untConvMK2toMK1.pas"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="126" Y="282"/>
-        <UsageCount Value="15"/>
+        <TopLine Value="357"/>
+        <CursorPos X="24" Y="328"/>
+        <UsageCount Value="17"/>
         <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="untConvMK2toMK1.pas"/>
-        <Caret Line="310" Column="5" TopLine="287"/>
-      </Position>
-      <Position>
-        <Filename Value="untDispatcher.pas"/>
-        <Caret Line="37" TopLine="32"/>
-      </Position>
-      <Position>
-        <Filename Value="untDispatcher.pas"/>
-        <Caret Line="85" Column="7" TopLine="68"/>
-      </Position>
-      <Position>
-        <Filename Value="untDispatcher.pas"/>
-        <Caret Line="131" Column="7" TopLine="121"/>
-      </Position>
-      <Position>
-        <Filename Value="untDispatcher.pas"/>
-        <Caret Line="137" Column="5" TopLine="105"/>
-      </Position>
-      <Position>
-        <Filename Value="units\untDX7IIPerformanceBank.pas"/>
-        <Caret Column="70"/>
-      </Position>
-      <Position>
-        <Filename Value="MK2toMK1.lpr"/>
-        <Caret Line="25" Column="17" TopLine="9"/>
-      </Position>
-      <Position>
-        <Filename Value="untConvMK2toMK1.pas"/>
-        <Caret Line="238" Column="31" TopLine="227"/>
-      </Position>
-      <Position>
-        <Filename Value="untConvMK2toMK1.pas"/>
-        <Caret Line="175" Column="37" TopLine="147"/>
-      </Position>
-      <Position>
-        <Filename Value="untConvMK2toMK1.pas"/>
-        <Caret Line="59" Column="3" TopLine="210"/>
-      </Position>
-      <Position>
-        <Filename Value="units\untDX7Voice.pas"/>
-        <Caret Line="370" Column="18" TopLine="353"/>
-      </Position>
-      <Position>
-        <Filename Value="untConvMK2toMK1.pas"/>
-        <Caret Line="59" Column="3" TopLine="210"/>
-      </Position>
-      <Position>
-        <Filename Value="untConvMK2toMK1.pas"/>
-        <Caret Line="24" Column="10" TopLine="149"/>
-      </Position>
-      <Position>
-        <Filename Value="units\untDX7Voice.pas"/>
-        <Caret Line="370" Column="19" TopLine="356"/>
-      </Position>
-      <Position>
-        <Filename Value="untConvMK2toMK1.pas"/>
-        <Caret Line="24" Column="10" TopLine="154"/>
-      </Position>
-      <Position>
-        <Filename Value="units\untDX7IISupplement.pas"/>
-        <Caret Line="144" Column="23" TopLine="127"/>
-      </Position>
-      <Position>
-        <Filename Value="untConvMK2toMK1.pas"/>
-        <Caret Line="263" Column="75" TopLine="256"/>
-      </Position>
-      <Position>
-        <Filename Value="untConvMK2toMK1.pas"/>
-        <Caret Line="210" Column="25" TopLine="196"/>
-      </Position>
-      <Position>
-        <Filename Value="untConvMK2toMK1.pas"/>
-        <Caret Line="161" Column="67" TopLine="148"/>
-      </Position>
-      <Position>
-        <Filename Value="untDispatcher.pas"/>
-        <Caret Line="55" Column="50" TopLine="26"/>
-      </Position>
       <Position>
         <Filename Value="untDispatcher.pas"/>
         <Caret Line="20" Column="52" TopLine="3"/>
@@ -448,6 +370,86 @@
       <Position>
         <Filename Value="untConvMK2toMK1.pas"/>
         <Caret Line="86" Column="23" TopLine="63"/>
+      </Position>
+      <Position>
+        <Filename Value="MK2toMK1.lpr"/>
+        <Caret Line="177" Column="118" TopLine="123"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="282" Column="126" TopLine="210"/>
+      </Position>
+      <Position>
+        <Filename Value="units\untDX7Voice.pas"/>
+        <Caret Line="371" Column="15" TopLine="367"/>
+      </Position>
+      <Position>
+        <Filename Value="untDispatcher.pas"/>
+        <Caret Line="22" Column="11" TopLine="54"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="331" Column="26" TopLine="324"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="389" Column="7" TopLine="378"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="399" Column="16" TopLine="378"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="397" Column="12" TopLine="383"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="336" Column="30" TopLine="332"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="328" Column="76" TopLine="323"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="24" Column="133" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="23" Column="85" TopLine="6"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="385" Column="84" TopLine="368"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="332" Column="3" TopLine="219"/>
+      </Position>
+      <Position>
+        <Filename Value="units\untDX7Voice.pas"/>
+        <Caret Line="371" Column="17" TopLine="356"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="333" Column="9" TopLine="306"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="388" Column="9" TopLine="367"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="353" Column="55"/>
+      </Position>
+      <Position>
+        <Filename Value="untDispatcher.pas"/>
+        <Caret Line="65" Column="20" TopLine="34"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="328" Column="24" TopLine="13"/>
       </Position>
     </JumpHistory>
     <RunParams>
