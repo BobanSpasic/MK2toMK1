@@ -81,7 +81,7 @@ begin
   DX7outB := TDX7BankContainer.Create;
   Report := TStringList.Create;
   ConversionLog := TStringList.Create;
-  ConversionLog.Add('Yamaha DX7II to DX7 Converter 1.1');
+  ConversionLog.Add('Yamaha DX7II to DX7 Converter 1.1.2');
   ConversionLog.Add('Author: Boban Spasic');
   ConversionLog.Add('https://github.com/BobanSpasic/MK2toMK1');
   ConversionLog.Add('');
@@ -350,7 +350,7 @@ begin
   DX7out := TDX7BankContainer.Create;
   Report := TStringList.Create;
   ConversionLog := TStringList.Create;
-  ConversionLog.Add('Yamaha DX7II to DX7 Converter 1.1');
+  ConversionLog.Add('Yamaha DX7II to DX7 Converter 1.1.2');
   ConversionLog.Add('Author: Boban Spasic');
   ConversionLog.Add('https://github.com/BobanSpasic/MK2toMK1');
   ConversionLog.Add('');

@@ -75,16 +75,15 @@
         <Filename Value="MK2toMK1.lpr"/>
         <IsPartOfProject Value="True"/>
         <TopLine Value="174"/>
-        <CursorPos X="80" Y="182"/>
+        <CursorPos X="49" Y="174"/>
         <UsageCount Value="202"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="untDispatcher.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="48"/>
+        <TopLine Value="20"/>
         <CursorPos X="86" Y="63"/>
         <UsageCount Value="202"/>
         <Loaded Value="True"/>
@@ -194,9 +193,10 @@
       </Unit>
       <Unit>
         <Filename Value="units\untDX7Voice.pas"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="11"/>
-        <TopLine Value="1074"/>
-        <CursorPos X="42" Y="1101"/>
+        <TopLine Value="1077"/>
+        <CursorPos X="12" Y="1055"/>
         <UsageCount Value="100"/>
         <Loaded Value="True"/>
       </Unit>
@@ -324,8 +324,8 @@
       <Unit>
         <Filename Value="untConvMK2toMK1.pas"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="357"/>
-        <CursorPos X="24" Y="328"/>
+        <TopLine Value="71"/>
+        <CursorPos X="57" Y="84"/>
         <UsageCount Value="17"/>
         <Loaded Value="True"/>
       </Unit>
@@ -382,10 +382,6 @@
       <Position>
         <Filename Value="units\untDX7Voice.pas"/>
         <Caret Line="371" Column="15" TopLine="367"/>
-      </Position>
-      <Position>
-        <Filename Value="untDispatcher.pas"/>
-        <Caret Line="22" Column="11" TopLine="54"/>
       </Position>
       <Position>
         <Filename Value="untConvMK2toMK1.pas"/>
@@ -450,6 +446,10 @@
       <Position>
         <Filename Value="untConvMK2toMK1.pas"/>
         <Caret Line="328" Column="24" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="untConvMK2toMK1.pas"/>
+        <Caret Line="84" Column="57" TopLine="71"/>
       </Position>
     </JumpHistory>
     <RunParams>
